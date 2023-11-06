@@ -2,4 +2,12 @@
 
 `pragma` especifica a versão do compilador do Solidity.
 
-https://github.com/danilocurvelo/solidity-workshop/blob/664a7f7e6434f861e21cdd14450dd89f0a10962a/01-HelloWorld/HelloWorld.sol#L1-L7
+```solidity
+// SPDX-License-Identifier: MIT
+// versão do compilador deve ser maior ou igual a 0.8.20 e menor que a 0.9.0
+pragma solidity ^0.8.20;
+
+contract HelloWorld {
+    string public greet = "Hello World!";
+}
+```

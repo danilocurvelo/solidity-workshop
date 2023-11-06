@@ -2,4 +2,27 @@
 
 Aqui está um contrato simples que você pode obter, aumentar e diminuir o valor de contagem armazenada neste contrato.
 
-https://github.com/danilocurvelo/solidity-workshop/blob/dcb688be062317314966dec1f584354005337491/02-Counter/Counter.sol#L1-L22
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract Counter {
+    uint public count;
+
+    // Função para obter (get) o valor atual do contador
+    function get() public view returns (uint) {
+        return count;
+    }
+
+    // Função para incrementar em 1 o contador
+    function inc() public {
+        count += 1;
+    }
+
+    // Função para decrementar em 1 o contador
+    function dec() public {
+        // Essa função irá falhar se count = 0
+        count -= 1;
+    }
+}
+```
