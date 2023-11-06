@@ -13,4 +13,4 @@ contract HelloWorld {
 
 ```
 
-https://github.com/danilocurvelo/solidity-workshop/blob/289e6f37aa80e42efcba3fce4d0142cc0bbdbe68/01-HelloWorld/HelloWorld.sol
+https://github.com/danilocurvelo/solidity-workshop/blob/1b811607696de6cc8c7e38077eb32cc3d0f2d798/01-HelloWorld/HelloWorld.sol
