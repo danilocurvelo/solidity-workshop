@@ -13,4 +13,6 @@ contract HelloWorld {
 
 ```
 
-https://github.com/danilocurvelo/solidity-workshop/blob/1b811607696de6cc8c7e38077eb32cc3d0f2d798/01-HelloWorld/HelloWorld.sol
+Código:
+
+https://github.com/danilocurvelo/solidity-workshop/blob/c7fad40e04f3be87f8d993d4567f215cf3e24f0b/01-HelloWorld/HelloWorld.sol#L1C1-L7C2
