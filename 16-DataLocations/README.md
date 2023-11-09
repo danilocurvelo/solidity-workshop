@@ -1,10 +1,10 @@
 # Storage, memory e calldata
 
-As variáveis são declaradas como armazenamento, memória ou calldata para especificar explicitamente a localização dos dados.
+As variáveis são declaradas como `storage`, `memory` ou `calldata` para especificar explicitamente a localização dos dados.
 
-- `storage` - a variável é uma variável de estado (armazenamento em blockchain)
-- `memory` - a variável está na memória e existe enquanto uma função está sendo chamada
-- `calldata` – localização de dados especial que contém argumentos da função
+- `storage` - a variável é uma variável de estado (armazenamento em blockchain). Variáveis de estado sempre são desse tipo.
+- `memory` - a variável está na memória e existe enquanto uma função está sendo chamada. São mutáveis.
+- `calldata` - a variável está na memória e existe enquanto uma função está sendo chamada. São imutáveis.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -39,6 +39,10 @@ contract DataLocations {
     // Você pode retornar variáveis armazenadas em memória
     function g(uint[] memory _arr) public returns (uint[] memory) {
         // faz algo com um array em memória
+    }
+
+    function h(uint[] calldata _arr) external {
+        // faz algo com o array calldata. não pode modifica-lo!
     }
 }
 ```

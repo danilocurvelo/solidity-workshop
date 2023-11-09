@@ -31,4 +31,8 @@ contract DataLocations {
     function g(uint[] memory _arr) public returns (uint[] memory) {
         // faz algo com um array em memória
     }
+
+    function h(uint[] calldata _arr) external {
+        // faz algo com o array calldata. não pode modifica-lo!
+    }
 }
